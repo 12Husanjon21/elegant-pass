@@ -1,0 +1,171 @@
+
+$black: #141718;
+$grey: #6C7275;
+
+
+* {
+    padding: 0; 
+    box-sizing: border-box;
+    margin: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+.center {
+    width: min(90vw 1100px);
+    margin: auto;
+}
+
+html {
+    font-size: 62.5%;
+}  
+
+body {
+    max-width: 1440px;
+}
+main {
+    display: flex;
+}
+
+h4 {
+    color: $grey;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    font-size: 1.6rem;
+}
+
+
+.material-symbols-outlined {
+    color: #6C7275;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+  
+}
+
+a {
+    color: #141718;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    font-size: inherit;
+    text-decoration: none;
+}
+
+.left {
+    width: 736px;
+    height: 1080px;
+    background-image: url(./images/chair.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    h2 {
+        font-family: "Poppins", sans-serif;
+        font-size: 2.4rem;
+        font-weight: 500;
+        text-align: center;
+        padding-top:1em;
+    }
+}
+
+.check {
+    display: flex;
+    column-gap: 12px;
+    input {
+        cursor: pointer;
+        width: 24px;
+        height: 24px;
+    }
+    h4 {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.signup {
+    margin: 220px 88px;
+    & {
+        font-family: "Inter", sans-serif;
+        
+    }
+    .top {
+        margin-bottom: 32px;
+        h1 {
+            font-weight: 500;
+            font-size: 4rem;
+            color: $black;
+            margin-bottom: 24px;
+        }
+        h4 {
+            color: $grey;
+            font-weight: 400;
+            font-family: "Inter", sans-serif;
+            font-size: 1.6rem;
+            a {
+                color:#38CB89;
+                font-weight: 500;
+                font-family: "Inter", sans-serif;
+                font-size: inherit;
+                text-decoration: none;
+            }
+        }
+    }
+    .inputs {
+        & {
+            font-size: 1.6rem;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            input {
+                padding: 0 0 8px 0;
+                border: none;
+                border-bottom: 1px solid #E8ECEF;
+                ::placeholder {
+                    color: $grey;
+                    font-size: 1.6rem;
+                }
+            }
+            input:focus {
+                outline: none;
+            }
+        }
+    }
+}
+.password {
+    display: flex;
+    column-gap: 50%;
+    input {
+        max-width: 456px;
+    }
+    span {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    
+}
+
+@media screen and (max-width:1000px) {
+    .left {
+        // width: 100%;
+        background-size: cover;
+        width: 536px;
+        height: 880px;
+    }
+    main {
+        display: block;
+    }
+    h4 {
+        font-size: 1.2rem;
+        a {
+            font-size: 1.2rem;
+        }
+    }
+
+}
